@@ -1,0 +1,96 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+    height: 100%;
+}
+
+@media (min-width: 992px) {
+  body {
+        padding-top: 56px;
+  }
+}
+
+
+/* Calendar */
+.calendar_responsive {
+    margin: 20px 0 100px 0;
+}
+table.cal_table {
+    border: 15px solid #25BAE4;
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+}
+@media only screen and (max-width: 450px) {
+    table.cal_table {
+        min-width: 450px;
+    }
+    .calendar_responsive {
+        overflow-x: auto;
+    }
+}
+table.cal_table th {
+    height: 50px;
+    padding-bottom: 8px;
+    background: #25BAE4;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+table.cal_table .prev_sign a, 
+table.cal_table .next_sign a {
+    color:white;
+    text-decoration: none;
+}
+table.cal_table tr.week_name {
+    font-size: 16px;
+    font-weight:400;
+    color:red;
+    width: 10px;
+    background-color: #efe8e8;
+}
+table.cal_table td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #e2e0e0;
+    font-size: 18px;
+    font-weight: bold;
+}
+table.cal_table .content {
+    background: #26B99A;
+    color: #fff;
+    height: 100%;
+    padding-top: 15px;
+    cursor: pointer;
+}
+table.cal_table .content:hover {
+    background: #449d44;
+}
+table.cal_table .today {
+    color: red;
+    height: 100%;
+    padding-top: 15px;
+}
+/* event item */
+.event_item {
+    margin-bottom: 30px; 
+    border-bottom: 1px solid #f2f2f2;
+}
+.modal_close_btn {
+    vertical-align: middle;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin-top: -5px;
+}
+textarea.noresize {
+    height: 100px;
+    resize: none;
+}
