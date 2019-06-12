@@ -64,7 +64,7 @@ class Events_calendar extends Core_controller {
 
 
 	/**
-	* create events calendar using CI calendaring class 
+	* Fetch and render same day events via ajax 
 	*/
 	public function same_day_events_ajax($date_int) {
 		$same_day_events = $this->events_model->get_events_by_date($date_int);
