@@ -57,7 +57,7 @@ class Events_calendar extends Core_controller {
 		}
 		$modal_trigger = 'tm_calendar_events';
 		$items = calendar_date_items($month, $year, $modal_trigger); //get events
-		//$items = 'emeka';
+		
 		$calendar = $this->calendar->generate($year, $month, $items); //generate 
 		return $calendar;
 	}
