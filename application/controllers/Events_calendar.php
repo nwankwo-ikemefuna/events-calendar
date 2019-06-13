@@ -57,7 +57,6 @@ class Events_calendar extends Core_controller {
 		}
 		$modal_trigger = 'tm_calendar_events';
 		$items = calendar_date_items($month, $year, $modal_trigger); //get events
-		
 		$calendar = $this->calendar->generate($year, $month, $items); //generate 
 		return $calendar;
 	}
@@ -71,8 +70,8 @@ class Events_calendar extends Core_controller {
 		$events = "";
 		foreach ($same_day_events as $single_event_arr) {
 			//cast into object
-        	$event = (Object) $single_event_arr; 
-        	//parse
+        		$event = (Object) $single_event_arr; 
+        		//parse
 			$events .= '<div class="event_item">';
 			$events .= '<h3>' . $event->title . '</h3>';
 			$events .= '<div>Time: ' . $event->time . '</div>';
